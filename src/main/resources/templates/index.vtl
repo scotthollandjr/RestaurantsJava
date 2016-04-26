@@ -1,0 +1,39 @@
+<h1>Restaurants I've Been To!</h1>
+
+#if ($restaurants)
+  <ul>
+    #foreach ($restaurant in $restaurants)
+      <li>$restaurant.getUserInfo(0)</li>
+      <li>$restaurant.getUserInfo(1)</li>
+      <li>$restaurant.getUserInfo(2)</li>
+    #end
+  </ul>
+#else
+  <p>I haven't been to any restaurants!</p>
+#end
+
+<p>Add a new Retaurant:</p>
+
+<form action="/tasks" method="post">
+  <div class="form-group">
+    <label for="name">Restaurant Name:</label>
+    <input id="name" name="name" type="text">
+  </div>
+  <div class="form-group">
+    <label for="dish">Best Dish:</label>
+    <input id="dish" name="dish" type="text">
+  </div>
+  <div class="form-group">
+    <label for="rating">Star Rating:</label>
+    <select id="rating" name="rating">
+      <option value="0" disabled selected>Choose a rating</option>
+      <option value="5" id="5">5 Star</option>
+      <option value="4" id="4">4 Star</option>
+      <option value="3" id="3">3 Star</option>
+      <option value="2" id="2">2 Star</option>
+      <option value="1" id="1">1 Star</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-default">Add task</button>
+</form>
