@@ -1,39 +1,38 @@
 <h1>Restaurants I've Been To!</h1>
 
 #if ($restaurants)
-  <ul>
     #foreach ($restaurant in $restaurants)
-      <li>$restaurant.getUserInfo(0)</li>
-      <li>$restaurant.getUserInfo(1)</li>
-      <li>$restaurant.getUserInfo(2)</li>
+      <h4>$restaurant.getName()</h4>
+      <p>Dish: $restaurant.getDish()</p>
+      <p>Rating: <strong>$restaurant.getRating()</strong></p>
+      <br>
     #end
-  </ul>
 #else
   <p>I haven't been to any restaurants!</p>
 #end
 
 <p>Add a new Retaurant:</p>
 
-<form action="/tasks" method="post">
+<form action="/success" method="post">
   <div class="form-group">
     <label for="name">Restaurant Name:</label>
     <input id="name" name="name" type="text">
   </div>
   <div class="form-group">
-    <label for="dish">Best Dish:</label>
+    <label for="dish">Dish:</label>
     <input id="dish" name="dish" type="text">
   </div>
   <div class="form-group">
-    <label for="rating">Star Rating:</label>
-    <select id="rating" name="rating">
+    <label for="rating" class="control-label">Star Rating:</label>
+    <select class="form-control" id="rating" name="rating">
       <option value="0" disabled selected>Choose a rating</option>
-      <option value="5" id="5">5 Stars</option>
-      <option value="4" id="4">4 Stars</option>
-      <option value="3" id="3">3 Stars</option>
-      <option value="2" id="2">2 Stars</option>
-      <option value="1" id="1">1 Star</option>
+      <option value="5 Stars" id="five">5 Stars</option>
+      <option value="4 Stars" id="four">4 Stars</option>
+      <option value="3 Stars" id="three">3 Stars</option>
+      <option value="2 Stars" id="two">2 Stars</option>
+      <option value="1 Star" id="one">1 Star</option>
     </select>
   </div>
 
-  <button type="submit" class="btn btn-default">Add task</button>
+  <button type="submit" class="btn btn-default">Add restuarant</button>
 </form>

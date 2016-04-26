@@ -9,8 +9,20 @@ public class Restaurants {
     mRating = rating;
   }
 
-  public String[] getUserInfo() {
-    String[] infoArray = {mName, mDish, mRating};
-    return infoArray;
+  public String getName() {
+    return mName;
   }
+
+  public String getDish() {
+    return mDish;
+  }
+
+  public String getRating() {
+    return mRating;
+  }
+//   public String[] getUserInfo() {
+//     String[] infoArray = {mName, mDish, mRating};
+//     return infoArray;
+//   }
+
 }

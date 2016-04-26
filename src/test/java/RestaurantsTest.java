@@ -11,8 +11,9 @@ public class RestaurantsTest {
 
   @Test
   public void Task_instantiatesWithDescription_String() {
-    Restaurants myRestaurants = new Restaurants("Pepe's", "Breakfast Burrito", "5");
-    String[] expected = {"Pepe's", "Breakfast Burrito", "5"};
-    Assert.assertArrayEquals(expected, myRestaurants.getUserInfo());
+    Restaurants myRestaurants = new Restaurants("Pepe's", "Breakfast Burrito", "5 Stars");
+    assertEquals("Pepe's", myRestaurants.getName());
+    assertEquals("Breakfast Burrito", myRestaurants.getDish());
+    assertEquals("5 Stars", myRestaurants.getRating());
   }
 }
