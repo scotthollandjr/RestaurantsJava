@@ -10,8 +10,6 @@ Restaurant list project for Epicodus Java course. User enters a restaurant, and 
 * Install gradle
 * enter "gradle run" in the repositories directory
 * in your browser go to "localhost:4567"
-* enter three sides into the fields, and click
-* enjoy results
 
 ## Link to repository
 Install the project files by following the link below and cloning this repository:
