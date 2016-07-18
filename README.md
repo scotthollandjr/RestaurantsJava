@@ -3,7 +3,7 @@
 #### _4/26/2016_
 
 ## Description
-Restaurant list project for Epicodus Java course. 
+Restaurant list project for Epicodus Java course. User enters a restaurant, and the program will list out entries.
 
 ## Setup/Installation Requirements
 * Clone repository
@@ -13,7 +13,7 @@ Restaurant list project for Epicodus Java course.
 * enter three sides into the fields, and click
 * enjoy results
 
-#### Link to repository
+## Link to repository
 
 Install the project files by following the link below and cloning this repository:
 
