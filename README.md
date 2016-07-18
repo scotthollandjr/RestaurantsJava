@@ -14,9 +14,7 @@ Restaurant list project for Epicodus Java course. User enters a restaurant, and 
 * enjoy results
 
 ## Link to repository
-
 Install the project files by following the link below and cloning this repository:
-
 https://github.com/theAppanaut/Restaurants.git
 
 ## Technologies Used
